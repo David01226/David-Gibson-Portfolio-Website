@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | David Gibson</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Animations -->
+    <script src="animations.js"></script>
+
+    <!-- Splide -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+
+    <section class="header">
+        <div class="header-wrapper fade">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="mobile-wrapper">
+
+            <a href="index.html">HOME</a>
+
+            <div onclick="openMenu()" id="hamburger-menu-wrapper">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side-Hamburger-Menu -->
+
+    <div onclick="closeMenu()" id="backdrop" class="backdrop"></div>
+
+    <aside id="hamburger-aside" class="hamburger-aside">
+        <div onclick="closeMenu()" class="scroll-close-button">
+            <button class="close">
+                  <div class="x-line-1"></div>
+                  <div class="x-line-2"></div>
+            </button>
+        </div>
+
+        <div class="hamburger-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </aside>
+
+    <!-- Hero -->
+
+    <section class="hero">
+        <div class="hero-wrapper">
+
+            <div class="hero-left">
+                <div class="hero-text">
+                    <h3 class="fade-in-1">Hi, my name is</h3>
+                    <h1 class="fade-in-2">DAVID GIBSON.</h1>
+                    <h2 class="fade-in-3">Front-end Web Developer.</h2>
+                    <p class="fade-in-4">I'm a self taught web developer, specialising primarily in front-end.</p>
+                </div>
+
+                <div class="hero-buttons fade-in-4">
+                    <a class="dark-btn" href="about.html">MORE ABOUT ME</a>
+                    <a class="light-btn" href="portfolio.html">VIEW MY PORTFOLIO</a>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                    <div class="hero-img fade-right">
+                        <img src="img/hero/hero_img.JPG" alt=""> 
+                    </div>
+            </div>
+
+            <!-- This is the mobile image only visible from 500px down -->
+            <img class="mobile-hero-img fade-right-mobile" src="img/hero/hero_img.JPG" alt="">
+
+            <div class="blue-rectangle-1"></div>
+            <div class="blue-rectangle-2"></div>
+
+        </div>
+    </section>
+
+<!-- Hamburger Menu -->
+<script src="nav.js"></script>
+    
+</body>
+</html>

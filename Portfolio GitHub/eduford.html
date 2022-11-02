@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eduford | David Gibson</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Animations -->
+    <script type="text/javascript" src="animations.js"></script>
+
+    <!-- Splide -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+
+    <section class="header">
+        <div class="header-wrapper fade">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="mobile-wrapper">
+
+            <a href="index.html">HOME</a>
+
+            <div onclick="openMenu()" id="hamburger-menu-wrapper">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side-Hamburger-Menu -->
+
+    <div onclick="closeMenu()" id="backdrop" class="backdrop"></div>
+
+    <aside id="hamburger-aside" class="hamburger-aside">
+        <div onclick="closeMenu()" class="scroll-close-button">
+            <button class="close">
+                  <div class="x-line-1"></div>
+                  <div class="x-line-2"></div>
+            </button>
+        </div>
+
+        <div class="hamburger-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </aside>
+
+    <!-- EDUFORD -->
+
+    <section class="project">
+        <div class="project-wrapper">
+
+
+            <!-- EDUFORD Overview -->
+
+            <section class="top-section">
+                <div class="project-title">
+                    <h1 class="fade-left">EDUFORD</h1>
+                </div>
+    
+                <div class="project-overview">
+                    <div class="project-overview-left">
+    
+                        <div id="video-slider" class="splide">
+                            <div class="splide__track">
+                                  <ul class="splide__list">
+
+                                    <li class="splide__slide" data-splide-interval="31000">
+                                        <!-- <video class="overview-video" autoplay muted>
+                                            <source src="https://drive.google.com/uc?export=download&id=1LWF9GCh0_zbxhBJsw-fywmt-jxFfYo3d" type='video/mp4'>
+                                        </video> -->
+                                        <video class="overview-video" autoplay muted>
+                                            <source src="vid/Screen_Recordings/eduford/eduford_vid_page1.mov">
+                                        </video>
+                                    </li>
+                                    <li class="splide__slide" data-splide-interval="5000">
+                                        <!-- <video class="overview-video" autoplay muted>
+                                            <source src="https://drive.google.com/uc?export=download&id=1uIKtQPgCXGp-dxzHOP7iwNhqXQmaCHaO" type='video/mp4'>
+                                        </video> -->
+                                        <video class="overview-video" autoplay muted>
+                                            <source src="vid/Screen_Recordings/eduford/eduford_vid_page2.mov">
+                                        </video>
+                                    </li>
+                                    <li class="splide__slide" data-splide-interval="10000">
+                                        <!-- <video class="overview-video" autoplay muted>
+                                            <source src="https://drive.google.com/uc?export=download&id=1nv_5TrXC-qn-CFuMr4aSsgSyYxFxzySj" type='video/mp4'>
+                                        </video> -->
+                                        <video class="overview-video" autoplay muted>
+                                            <source src="vid/Screen_Recordings/eduford/eduford_vid_page3.mov">
+                                        </video>                                    
+                                    </li>
+                                    <li class="splide__slide" data-splide-interval="16000">
+                                        <!-- <video class="overview-video" autoplay muted>
+                                            <source src="https://drive.google.com/uc?export=download&id=1GQWYGlETrbrQxKEgCEmkMzmCk_-DxeQr" type='video/mp4'>
+                                        </video> -->
+                                        <video class="overview-video" autoplay muted>
+                                            <source src="vid/Screen_Recordings/eduford/eduford_vid_page4.mov">
+                                        </video>
+                                    </li>
+                                    <li class="splide__slide" data-splide-interval="15000">
+                                        <!-- <video class="overview-video" autoplay muted>
+                                            <source src="https://drive.google.com/uc?export=download&id=1kErXgYNSNjUcQzsaXPxDTKYMs6g6ar29" type='video/mp4'>
+                                        </video> -->
+                                        <video class="overview-video" autoplay muted>
+                                            <source src="vid/Screen_Recordings/eduford/eduford_vid_page5.mov">
+                                        </video>
+                                    </li>
+
+                                  </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+                    </div>
+    
+                    <div class="project-overview-right">
+                        <div class="project-overview-right-top">
+                            <h3 class="fade-right">Project Overview</h3>
+                            <p class="fade-right">This project was a coding challenge I found online and was the first full website I ever coded. It allowed me to practice essential positioning methods such as, flexbox and introduced me to styling practices such as, on hover and pseudoelements. It was also my first experience with PHP. I later revisited this whilst building my portfolio and is used in the form on the contact page.
+                            </p>
+                        </div>
+
+                        <div class="project-overview-right-bottom">
+                            <a class="fade-right" href="https://github.com/David01226/Eduford.git" target=”_blank”>VIEW / DOWNLOAD MY CODE</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="blue-rectangle-5"></div>
+                <div class="blue-rectangle-6"></div>
+            </section>
+
+
+            <!-- Eduford Main features -->
+
+
+            <section class="middle-section">
+
+                <div class="middle-title">
+                    <h3>MAIN FEATURES</h3>
+                </div>
+
+                <div class="middle-content">
+
+                    <div class="middle-content-top">
+
+                        <div class="middle-col-top">
+                            <div class="middle-col-title">
+                                <p>HTML</p>
+                            </div>
+                            <div class="middle-col-list-bg">
+                                <div class="middle-col-list">
+                                    <ul>
+                                        <li>text tags</li>
+                                        <li>img</li>
+                                        <li>forms</li>
+                                        <li>selectors</li>
+                                        <li>svgs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="middle-col-top">
+                            <div class="middle-col-title">
+                                <p>CSS</p>
+                            </div>
+                            <div class="middle-col-list-bg">
+                                <div class="middle-col-list">
+                                    <ul>
+                                        <li>hover</li>
+                                        <li>pseudo-elements</li>
+                                        <li>transitions</li>
+                                        <li>media queries</li>
+                                        <li>box-shadow</li>
+                                        <li>flexbox</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="middle-content-bottom">
+                        <div class="middle-col-bottom">
+                            <div class="middle-col-title">
+                                <p>JAVASCRIPT</p>
+                            </div>
+                            <div class="middle-col-list-bg">
+                                <div class="middle-col-list">
+                                    <ul>
+                                        <li>functions</li>
+                                        <li>variables</li>
+                                        <li>DOM selectors</li>
+                                        <li>DOM elements</li>
+                                        <li>PHP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Eduford Responsive Section -->
+
+            <section class="bottom-section">
+                <div class="bottom-title fade-right">
+                    <h3>RESPONSIVE LAYOUT</h3>
+                </div>
+                <div class="bottom-content">
+                    <div class="bottom-content-text">
+                        <div class="bottom-content-text-top">
+                            <!-- <h3 class="fade-left">Project Overview</h3> -->
+                            <p class="fade-left">Through the use of media queries and breakpoints I have been able to make this website fully responsive for the user. It is compatible on mobile, tablet, small-medium desktop screens and even larger desktop screens.
+                            </p>
+                        </div>
+
+                        <div class="bottom-content-text-bottom">
+                            <a href="https://github.com/David01226/Eduford.git" target=”_blank”>VIEW / DOWNLOAD MY CODE</a>
+                        </div>
+                    </div>
+                    <!-- <video class="responsive-vid" controls autoplay muted loop>
+                        <source src="https://drive.google.com/uc?export=download&id=1vTTqEuMQ7Wld1q5W-lBod0MHIfAgAd_k" type='video/mp4'>
+                    </video> -->
+                    <video class="responsive-vid" autoplay muted controls loop>
+                        <source src="vid/Screen_Recordings/eduford/eduford_vid_responsive.mov">
+                    </video>
+                    
+                </div>
+
+                <div class="blue-rectangle-3"></div>
+                <div class="blue-rectangle-4"></div>
+            </section>
+            
+
+            
+        </div>
+    </section>
+
+    <!-- Video control/restart -->
+    <script type="text/javascript" src="video.js"></script>
+
+    <!-- Hamburger Menu -->
+    <script type="text/javascript"  src="nav.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,437 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #242333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact-wrapper {
+    width: 85%;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.contact-left, .contact-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-right {
+    align-items: flex-end;
+}
+
+.contact-left h1 {
+    color: white;
+    font-size: 160px;
+    text-shadow: -11px 5px 5px #0000007a;
+
+}
+
+.contact-left h3 {
+    color: #01B0D3;
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 5%;
+}
+
+.contact-left p {
+    color: white;
+    font-size: 28px;
+    font-weight: 200;
+    margin-top: 2%;
+}
+
+.contact-details {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-details a svg {
+    fill: white;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.form-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3d3c50;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Barlow';
+    font-size: 27px;
+    height: 56px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px;
+    background-color: #3d3c50;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Barlow';
+    font-size: 27px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #c6c6c6;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 27px;
+    height: 70px;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: none !important;
+    border: 1px solid #01b0d3 !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input[type=submit]:hover {
+    background-color: #01b0d3;
+    color: white;
+}
+
+/* Layout Breakpoints */
+
+@media screen and (max-width: 990px) {
+    .contact {
+        height: unset;
+    }
+
+    .contact-wrapper {
+        width: 85%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+    
+    .contact-left {
+        width: 100%;
+        height: unset;
+        margin-top: 8%;
+    }
+    
+    .contact-right {
+        margin: 85px 0 100px 0;
+        width: 100%;
+    } 
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 912px) and (min-height: 1290px) {
+    .contact {
+        height: 100vh;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .contact-left {
+        margin-top: 12%;
+    }
+
+    .contact-right {
+        margin: 15% 0 20% 0;
+    }
+
+}
+
+/* Text breakpoints */
+
+@media screen and (max-width: 1905px) {
+    .contact-left h3 {
+      font-size: 60px;
+    }
+
+    .contact-left h1 {
+        font-size: 145px;
+    }
+
+
+    .contact-left p {
+        font-size: 28px;
+    }
+    
+  }
+
+  @media screen and (max-width: 1727px) {
+    .contact-left h3 {
+      font-size: 60px;
+    }
+
+    .contact-left h1 {
+        font-size: 130px;
+    }
+
+    .contact-left p {
+        font-size: 25px;
+    }
+    
+  }
+
+
+@media screen and (max-width: 1549px) {
+    .contact-left h3 {
+      font-size: 52px;
+    }
+
+    .contact-left h1 {
+        font-size: 110px;
+    }
+
+    .contact-left p {
+        font-size: 21px;
+    }
+
+    input[type=text], textarea {
+        margin-bottom: 15px;
+    }
+
+    label, input[type=text], textarea {
+        font-size: 25px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+  }
+
+  @media screen and (max-width: 1400px) {
+    input[type=text] {
+        height: 45px;
+    }
+    
+    label, input[type=text], textarea {
+        font-size: 21px;
+    }
+    
+    textarea {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    input[type=submit] {
+        font-size: 22px;
+        height: 55px;
+    }
+
+  }
+
+
+
+
+@media screen and (max-width: 1310px) {
+    .contact-left h3 {
+      font-size: 52px;
+    }
+
+    .contact-left h1 {
+        font-size: 95px;
+    }
+
+    .contact-left p {
+        font-size: 21px;
+    } 
+    
+  }
+
+  @media screen and (max-width: 1131px) {
+    .contact-left h3 {
+      font-size: 52px;
+    }
+
+    .contact-left h1 {
+        font-size: 80px;
+    }
+
+    .contact-left p {
+        font-size: 19px;
+    }
+
+    
+    
+  }
+
+  @media screen and (max-width: 990px) {
+    .contact-left h3 {
+        font-size: 55px;
+      }
+  
+      .contact-left h1 {
+          font-size: 115px;
+      }
+  
+  
+      .contact-left p {
+          font-size: 22px;
+      }
+}
+
+@media screen and (max-width: 840px) {
+    .contact-left h3 {
+        font-size: 53px;
+      }
+  
+      .contact-left h1 {
+          font-size: 100px;
+      }
+  
+  
+      .contact-left p {
+          font-size: 19px;
+      }
+}
+
+@media screen and (max-width: 731px) {
+    .contact-left h3 {
+        font-size: 50px;
+      }
+  
+      .contact-left h1 {
+        font-size: 86px;
+        line-height: 1;
+      }
+  
+      .contact-left p {
+          font-size: 17px;
+      }
+}
+
+@media screen and (max-width: 539px) {
+      .contact-left p {
+          font-size: 16px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+    label, input[type=text], textarea {
+        font-size: 18px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+  }
+
+@media screen and (max-width: 480px) {
+    .contact-left h3 {
+        font-size: 45px;
+      }
+  
+      .contact-left h1 {
+        font-size: 86px;
+        line-height: 1;
+      }
+
+}
+
+@media screen and (max-width: 450px) {
+    .contact-left a {
+        font-size: 20px;
+      }
+
+    label {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+    .contact-left h1 {
+        font-size: 55px;
+        line-height: 1;
+      }
+
+      .contact-left h3 {
+        font-size: 36px;
+      }
+
+}
+
+@media screen and (max-width: 364px) {
+    .contact-left h3 {
+        margin-top: 20px;
+      }
+  
+      .contact-left p {
+          font-size: 15px;
+      }
+
+      .contact-left a {
+        font-size: 17px;
+      }
+}
+
+@media screen and (max-width: 335px) {
+    .contact-left h3 {
+        font-size: 40px;
+      }
+  
+      .contact-left p {
+          font-size: 14px;
+      }
+}
