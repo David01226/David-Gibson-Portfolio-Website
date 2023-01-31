@@ -412,6 +412,7 @@ section.bottom-section > * {
     .top-section, .middle-section, .bottom-section {
         height: unset;
         padding: 120px 7.5% 18% 7.5%;
+
     }
 
 
@@ -421,12 +422,18 @@ section.bottom-section > * {
     .top-section {
         justify-content: flex-start;
         padding-top: 15%;
+        height: unset;
+        padding-bottom: 15%;
     }
 
     .middle-section, .bottom-section  {
         padding: 10% 7.5% 15% 7.5%;
+        height: unset;
     }
 
+    .project-wrapper {
+        scroll-snap-type: unset;
+    }
 
     .project-overview, .middle-content {
         flex-direction: column;

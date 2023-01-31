@@ -124,6 +124,11 @@
     border-bottom-right-radius: 40px;
 }
 
+.middle-img {
+    border-top-right-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+}
+
 .thumbnail-overlay {
     position: absolute;
     top: 0;
@@ -192,6 +197,8 @@
     width: 100%;
     display: block;
 }
+
+
 
 
 /* Layout Breakpoints */
